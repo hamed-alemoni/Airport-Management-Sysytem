@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="1010.0" styleClass="main-bg" stylesheets="@../CSS/Design.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerInformationPageController">
+   <right>
+      <AnchorPane prefHeight="482.0" prefWidth="178.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="50.0" layoutY="24.0" opacity="0.88" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <AnchorPane prefHeight="91.0" prefWidth="180.0">
+                     <children>
+                        <Button fx:id="addBTN" layoutX="64.0" layoutY="23.0" mnemonicParsing="false" onAction="#setOnActionAddBTN" prefHeight="45.0" prefWidth="160.0" style="-fx-background-radius: 11;" stylesheets="@../CSS/Design.css" text="Add" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <styleClass>
+                              <String fx:value="button-right" />
+                              <String fx:value="button-form" />
+                           </styleClass></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="91.0" prefWidth="180.0">
+                     <children>
+                        <Button layoutX="64.0" layoutY="23.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="160.0" style="-fx-background-radius: 11;" stylesheets="@../CSS/Design.css" text="Edit" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <styleClass>
+                              <String fx:value="button-form" />
+                              <String fx:value="button-right" />
+                           </styleClass></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="101.0" prefHeight="91.0" prefWidth="180.0">
+                     <children>
+                        <Button fx:id="removeBTN" layoutX="64.0" layoutY="23.0" mnemonicParsing="false" onAction="#setOnActionRemoveBTN" prefHeight="45.0" prefWidth="160.0" style="-fx-background-radius: 11;" stylesheets="@../CSS/Design.css" text="Remove" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <styleClass>
+                              <String fx:value="button-form" />
+                              <String fx:value="button-right" />
+                           </styleClass></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="91.0" prefWidth="180.0">
+                     <children>
+                        <Button fx:id="exitBTN" layoutX="64.0" layoutY="23.0" mnemonicParsing="false" onAction="#setOnActionExitBTN" prefHeight="45.0" prefWidth="160.0" style="-fx-background-radius: 11;" stylesheets="@../CSS/Design.css" text="exit" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <styleClass>
+                              <String fx:value="button-form" />
+                              <String fx:value="button-right" />
+                           </styleClass></Button>
+                     </children>
+                  </AnchorPane>
+               </children></VBox>
+         </children></AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="managerTableView" layoutX="-1.0" layoutY="-1.0" prefHeight="482.0" prefWidth="834.0" stylesheets="@../CSS/Design.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="82.20001411437988" text="ID" />
+                <TableColumn fx:id="name" prefWidth="68.1999740600586" text="Name" />
+                  <TableColumn fx:id="lastName" prefWidth="68.1999740600586" text="Last name" />
+                  <TableColumn fx:id="username" prefWidth="68.1999740600586" text="Username" />
+                  <TableColumn fx:id="password" prefWidth="68.1999740600586" text="Password" />
+                  <TableColumn fx:id="email" prefWidth="118.79998779296875" text="Email" />
+                  <TableColumn fx:id="address" prefWidth="126.60003662109375" text="Address" />
+                  <TableColumn fx:id="phoneNumber" prefWidth="111.0" text="Phone number" />
+                  <TableColumn fx:id="salary" prefWidth="121.00006103515625" text="Salary" />
+              </columns>
+               <styleClass>
+                  <String fx:value="table-view-select" />
+                  <String fx:value="table-view-form" />
+               </styleClass>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="superAdmin" prefHeight="401.0" prefWidth="396.0" style="-fx-background-color: #1db9ca; -fx-background-radius: 50;" stylesheets="@../CSS/Design.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SuperAdminPageController">
+   <children>
+      <Button fx:id="personalBTN" layoutX="26.0" layoutY="111.0" mnemonicParsing="false" onAction="#setOnActionPersonalBTN" prefHeight="56.0" prefWidth="253.0" style="-fx-background-radius: 12;" stylesheets="@../CSS/Design.css" text="Personal Profile Management">
+         <textFill>
+            <LinearGradient endX="0.5229007633587786" endY="0.8893129780092313" startX="0.8816793902229717" startY="0.4809160086944813">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1511450381679388">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-right" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="airportManagerBTN" layoutX="305.0" layoutY="111.0" mnemonicParsing="false" onAction="#setOnActionAirportManagerBTN" prefHeight="56.0" prefWidth="254.0" style="-fx-background-radius: 12;" stylesheets="@../CSS/Design.css" text="Airport Manager Management">
+         <textFill>
+            <LinearGradient endX="0.5229007633587786" endY="0.8893129780092313" startX="0.8816793902229717" startY="0.4809160086944813">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1511450381679388">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-right" />
+            <String fx:value="button-form" />
+         </styleClass></Button>
+      <Button fx:id="changeBTN" layoutX="45.0" layoutY="178.0" mnemonicParsing="false" onAction="#setOnActionChangeBTN" prefHeight="43.0" prefWidth="215.0" style="-fx-background-radius: 12;" stylesheets="@../CSS/Design.css" text="Change Password" visible="false">
+         <textFill>
+            <LinearGradient endX="0.5229007633587786" endY="0.8893129780092313" startX="0.8816793902229717" startY="0.4809160086944813">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1511450381679388">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-form" />
+            <String fx:value="button-right" />
+         </styleClass></Button>
+      <Button fx:id="informationBTN" layoutX="324.0" layoutY="178.0" mnemonicParsing="false" onAction="#setOnActionInformationBTN" prefHeight="43.0" prefWidth="215.0" style="-fx-background-radius: 12;" stylesheets="@../CSS/Design.css" text="See Manger Information" visible="false">
+         <textFill>
+            <LinearGradient endX="0.5229007633587786" endY="0.8893129780092313" startX="0.8816793902229717" startY="0.4809160086944813">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1511450381679388">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-form" />
+            <String fx:value="button-right" />
+         </styleClass></Button>
+      <Button fx:id="changeBTN1" layoutX="103.0" layoutY="320.0" mnemonicParsing="false" onAction="#setOnActionChangeBTN1" prefHeight="26.0" prefWidth="87.0" style="-fx-background-radius: 12;" stylesheets="@../CSS/Design.css" text="Change" visible="false">
+         <textFill>
+            <LinearGradient endX="0.5229007633587786" endY="0.8893129780092313" startX="0.8816793902229717" startY="0.4809160086944813">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1511450381679388">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-form" />
+            <String fx:value="button-right" />
+         </styleClass></Button>
+      <PasswordField fx:id="passwordPSF" alignment="CENTER" layoutX="54.0" layoutY="236.0" prefHeight="26.0" prefWidth="190.0" promptText="New Password" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></PasswordField>
+      <PasswordField fx:id="confirmationPSF" alignment="CENTER" layoutX="54.0" layoutY="279.0" prefHeight="26.0" prefWidth="190.0" promptText="Confirm New Password" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></PasswordField>
+      <Label fx:id="successfulLBL" layoutX="120.0" layoutY="359.0" style="-fx-text-fill: green;" text="successful" visible="false" />
+      <Button fx:id="exitBTN" layoutX="260.0" layoutY="355.0" mnemonicParsing="false" onAction="#setOnActionExitBTN" prefHeight="26.0" prefWidth="54.0" style="-fx-background-radius: 12;" stylesheets="@../CSS/Design.css" text="Exit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="0.5114503379996497" endY="0.07633588514255207" startY="0.4770992366412214">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8745098114013672" green="0.10588235408067703" blue="0.10588235408067703" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <styleClass>
+            <String fx:value="button-right" />
+            <String fx:value="button-form" />
+         </styleClass>
+      </Button>
+      <Label layoutX="176.0" layoutY="-23.0" text="Wlcome Super Admin" textFill="#f5f2f2">
+         <font>
+            <Font name="Javanese Text" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="54.0" layoutX="269.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: black;">
+         <image>
+            <Image url="@../admin3-copy.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="minimizeBTN" layoutX="542.0" layoutY="13.0" mnemonicParsing="false" onAction="#setOnActionMinimizeBTN" prefHeight="26.0" prefWidth="54.0" rotate="34.9" style="-fx-background-color: black; -fx-background-radius: 40;" text="_" textFill="#f5f5f5" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

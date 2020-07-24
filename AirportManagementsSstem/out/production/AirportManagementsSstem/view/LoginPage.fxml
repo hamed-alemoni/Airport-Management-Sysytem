@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchorPane" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="663.0" style="-fx-background-color: #1db9ca; -fx-border-color: #1db9ca;" stylesheets="@../CSS/Design.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <children>
+      <BorderPane layoutY="36.0" prefHeight="424.0" prefWidth="727.0" style="-fx-background-radius: 800; -fx-border-radius: 800;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-64.0" AnchorPane.topAnchor="36.0">
+         <center>
+            <Group BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="37.609375" layoutY="236.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" style="-fx-background-radius: 9; -fx-background-color: black;" stylesheets="@../CSS/Design.css" text="Enter">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <textFill>
+                        <LinearGradient endX="0.5381678879716014" endY="0.893129791012247" startX="0.9122137695778417" startY="0.4618320756286155">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9961832061068702">
+                                 <color>
+                                    <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="exitBTN" cancelButton="true" layoutX="152.609375" layoutY="236.0" mnemonicParsing="false" onAction="#setActionExitBTN" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: black; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css" text="Exit">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <textFill>
+                        <LinearGradient endX="0.9083969247250157" endY="0.7175572846682016" startX="0.5992367140209403" startY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8763157725334167" green="0.10548245906829834" blue="0.10548245906829834" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9710526466369629" green="0.9710526466369629" blue="0.9710526466369629" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <DropShadow />
+                     </effect></Button>
+                  <PasswordField layoutX="37.609375" layoutY="165.0" prefHeight="26.0" prefWidth="196.0" promptText="Password" style="-fx-background-radius: 9; -fx-background-color: #05505c;" stylesheets="@../CSS/Design.css">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField alignment="TOP_LEFT" layoutX="37.609375" layoutY="119.0" prefHeight="26.0" prefWidth="196.0" promptText="Username" style="-fx-background-radius: 9; -fx-background-color: #05505c;" stylesheets="@../CSS/Design.css">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </TextField>
+                  <Label layoutY="-13.0" prefHeight="128.0" prefWidth="346.0" text="Who are you?" textFill="#f5f0f0">
+                     <font>
+                        <Font name="Javanese Text" size="48.0" />
+                     </font>
+                  </Label>
+                  <Button id="button" fx:id="FPBTN" layoutX="38.0" layoutY="198.0" mnemonicParsing="false" onAction="#setOnActionForgetPasswordBTN" style="-fx-background-color: #1db9ca;" stylesheets="@../CSS/Design.css" text="Forget Password?" textFill="#000000bb" underline="true" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+         </center>
+         <top>
+            <Group BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView blendMode="ADD" cache="true" cacheHint="QUALITY" fitHeight="52.0" fitWidth="61.0" layoutX="187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../airport.jpg" />
+                     </image>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="-3.0" layoutY="59.0" prefHeight="70.0" prefWidth="486.0" text="Welcome to Airport Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Javanese Text" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </top>
+      </BorderPane>
+   </children>
+   <opaqueInsets>
+      <Insets right="500.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

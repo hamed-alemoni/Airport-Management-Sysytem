@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="addManager" prefHeight="448.0" prefWidth="604.0" style="-fx-background-color: #1db9ca;" stylesheets="@../CSS/Design.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddManagerPageController">
+   <children>
+      <TextField fx:id="firstNameTXF" layoutX="62.0" layoutY="57.0" promptText="First Name" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="lastNameTXF" layoutX="366.0" layoutY="57.0" promptText="Last Name" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="phoneNumberTXF" layoutX="62.0" layoutY="121.0" promptText="Phone Number" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="addressTXF" layoutX="366.0" layoutY="121.0" promptText="Address" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="usernameTXF" layoutX="62.0" layoutY="187.0" promptText="Username" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="emailTXF" layoutX="366.0" layoutY="187.0" promptText="Email" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="salaryTXF" layoutX="210.0" layoutY="307.0" promptText="Salary" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <Button fx:id="addBTN" layoutX="254.0" layoutY="369.0" mnemonicParsing="false" onAction="#setOnActionAddBTN" prefHeight="26.0" prefWidth="85.0" style="-fx-background-radius: 9;" stylesheets="@../CSS/Design.css" text="Add">
+         <textFill>
+            <LinearGradient endX="0.6603053580713636" endY="0.8816793884029825" startX="0.8587786396041172" startY="0.5648855398629458">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05098039284348488" green="0.8588235378265381" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-form" />
+            <String fx:value="button-right" />
+         </styleClass></Button>
+      <Button fx:id="exitBTN" layoutX="254.0" layoutY="407.0" mnemonicParsing="false" onAction="#setOnActionExitBTN" prefHeight="26.0" prefWidth="86.0" style="-fx-background-radius: 9;" stylesheets="@../CSS/Design.css" text="exit">
+         <textFill>
+            <LinearGradient endX="0.6603053580713636" endY="0.8816793884029825" startX="0.8587786396041172" startY="0.5648855398629458">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8745098114013672" green="0.10588235408067703" blue="0.10588235408067703" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="button-form" />
+            <String fx:value="button-right" />
+         </styleClass></Button>
+      <Button fx:id="minimizeBTN" layoutX="568.0" layoutY="-13.0" mnemonicParsing="false" onAction="#setOnActionMinimizeBTN" prefHeight="0.0" prefWidth="36.0" style="-fx-background-color: black;" text="_" textFill="#f5f5f5" />
+      <PasswordField fx:id="passwordPSF" layoutX="62.0" layoutY="255.0" promptText="Password" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="confirmationPSF" layoutX="366.0" layoutY="255.0" promptText="Confirmation" style="-fx-background-color: #05505c; -fx-background-radius: 9;" stylesheets="@../CSS/Design.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></PasswordField>
+      <Label fx:id="invalidPhoneNumberLBL" layoutX="62.0" layoutY="146.0" text="invalid phone number" textFill="#e20d0d" visible="false" />
+      <Label fx:id="invalidUsername" layoutX="62.0" layoutY="200.0" prefHeight="18.0" prefWidth="185.0" text="Please enter another username" textFill="#ea0b0b" visible="false" />
+      <Label fx:id="invalidEmailLBL" layoutX="366.0" layoutY="200.0" text="invalid email" textFill="#e50b0b" visible="false" />
+      <Label fx:id="invalidSalaryLBL" layoutX="212.0" layoutY="304.0" text="Invalid salary" textFill="#dd0606" visible="false" />
+      <ImageView fitHeight="56.0" fitWidth="61.0" layoutX="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../addUser.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

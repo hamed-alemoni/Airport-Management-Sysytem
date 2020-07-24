@@ -1,0 +1,26 @@
+.button:hover{
+     -fx-text-fill: white;
+
+ }
+#anchorPane{
+    -fx-border-radius: 500;
+    -fx-background-radius: 70;
+}
+
+
+.text-field{
+    -fx-text-fill: white;
+}
+
+
+
+
+#button:hover{
+    /*-fx-font-weight: bold;*/
+    -fx-text-fill: black;
+
+}
+.check-box{
+    -fx-text-fill: white;
+
+}

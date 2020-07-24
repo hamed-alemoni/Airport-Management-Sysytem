@@ -1,0 +1,74 @@
+.button:hover{
+     -fx-text-fill: white;
+
+ }
+#anchorPane{
+    -fx-border-radius: 500;
+    -fx-background-radius: 70;
+}
+
+.main-bg{
+    -fx-background-image: url('/background.jpg');
+}
+
+#superAdmin{
+    -fx-background-image: url('/background1.jpg');
+
+}
+#addManager{
+    -fx-background-image: url('/download.jpg');
+
+}
+.text-field{
+    -fx-text-fill: white;
+}
+
+.choice-box .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-color:red;
+}
+.cb .context-menu {
+    -fx-background-color: black;
+}
+
+/* Background color of the whole context menu*/
+   .choice-box .context-menu { -fx-background-color: black; }
+/* Focused item background color in the list*/
+   .choice-box .menu-item:focused { -fx-background-color:  #1db9ca; }
+/* Text color of non-focused items in the list*/
+   .choice-box .menu-item > .label { -fx-text-fill: white; }
+/* Text color of focused item in the list*/
+   .choice-box .menu-item:focused > .label { -fx-text-fill: black; }
+
+
+/* Background color of the control itself*/
+   .choice-box {
+       -fx-background-color: black;
+       -fx-mark-color:  #1db9ca; /* arrow color*/
+   }
+
+/* Selected item text color on the control itself*/
+   .choice-box > .label { -fx-text-fill: white; }
+
+#button:hover{
+    /*-fx-font-weight: bold;*/
+    -fx-text-fill: black;
+
+}
+.check-box{
+    -fx-text-fill: white;
+
+}
+
+
+.button-right:hover{
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.button-form{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
